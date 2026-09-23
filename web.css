@@ -1,0 +1,327 @@
+
+@font-face {
+    font-family: "Nova Slim";
+    src: url("./NovaSlim-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Funnel Display";
+    src: url("./FunnelDisplay-VariableFont_wght.ttf") format("truetype");
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+.custom-font {
+    font-family: "Nova Slim", sans-serif;
+    color: #F86107;
+}
+
+.custom-font2 {
+    font-family: "Funnel Display", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FDEFE5; 
+}
+header {
+    background-color: #35343E;
+    border-radius: 60px;
+    margin: 20px auto 0;
+    width: calc(100% - 180px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 12px 28px;
+    height: 90px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.logo img {
+    width: 30px;
+    height: 46px;
+    object-fit:cover;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 1px;
+    line-height: 1;
+}
+
+.logo-text p {
+    margin: 4px 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 38px;
+}
+
+nav a {
+    color: #E5E7EB;
+    text-decoration: none;
+    font-family: "Funnel Display", sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 8px 0;  
+}
+
+nav a:first-child {
+    color: #F86107;
+    border-bottom: 3px solid #F86107;
+}
+
+nav a:hover {
+    color: #F86107;
+}
+
+header button {
+    border: none;
+    border-radius: 50px;
+    background-color: #F86107;
+    color: white;
+    padding: 16px 30px;
+    font-family: "Funnel Display", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    align-items: end;
+    
+}
+
+header button:hover {
+    transform: translateY(-2px);
+}
+
+.hamburger {
+    width: 45px;
+    height: 45px;
+    background-color: #35343E;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin: 20px;
+}
+
+.hamburger span {
+    width: 22px;
+    height: 2px;
+    background-color: white;
+}
+
+.hamburger:hover {
+    background-color: #F86107;
+}
+
+.content {
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 65px auto 0;
+    padding: 0 30px;
+}
+
+.content h1 {
+    font-family: "Funnel Display", sans-serif;
+    font-size: 96px;
+    font-weight: 800;
+    line-height: 0.95;
+    width: 950px;
+    margin: 0 auto;
+    color: #111827;
+}
+
+
+.content p {
+    font-family: "Funnel Display", sans-serif;
+    width: 100%;
+    width: 850px;
+    margin: 55px auto 0;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 1.35;
+    color: #475569;
+    text-align: center;
+}
+
+.content button {
+    border-radius: 50px;
+    padding: 20px 45px;
+    margin-top: 60px;
+    margin-right: 15px;
+    border: 1px solid #D6DCE5;
+    background-color: white;
+    color: #111827;
+    font-family: "Funnel Display", sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    width: 230px;
+    
+}
+
+.content button:first-of-type {
+    background-color: #111827;
+    color: white;
+    border-color: #111827;
+}
+
+
+@media (max-width: 1100px) {
+
+    header {
+        width: 100%;
+    }
+
+    nav {
+        gap: 20px;
+    }
+
+    nav a {
+        font-size: 15px;
+    }
+
+    .content {
+        margin-top: 55px;
+    }
+
+    .content h1 {
+        font-size: 75px;
+        max-width: 800px;
+    }
+
+    .content p {
+        max-width: 750px;
+        font-size: 22px;
+    }
+}
+
+
+/*mobile*/
+
+@media (max-width: 875px) {
+
+    header {
+        width: 100%;
+        margin: 15px auto 0;
+        padding: 12px 18px;
+        border-radius: 35px;
+        min-height: 70px;
+    }
+
+    .logo {
+        margin-left: 0;
+    }
+
+    .logo img {
+        width: 25px;
+        height: 38px;
+    }
+
+    .logo-text p:first-child {
+        font-size: 20px ;
+    }
+
+    .logo-text p:last-child {
+        font-size: 10px ;
+    }
+    nav {
+        display: none;
+    }
+
+    header button {
+        display: none;
+    }
+
+    .content {
+        margin-top: 55px;
+        padding: 0 20px;
+    }
+
+    .content h1 {
+        font-size: 55px;
+        line-height: 1;
+        letter-spacing: -2px;
+        max-width: 600px;
+    }
+
+    .content p {
+        margin-top: 35px;
+        max-width: 550px;
+        font-size: 19px;
+        line-height: 1.4;
+    }
+
+    .content button { 
+        width: 200px;
+        margin: 20px 0;
+        padding: 17px 25px;
+    }
+}
+
+@media (min-width:200px) and (max-width: 550px) {
+    header{
+        width: 100%;
+        
+    }
+    nav {
+        display: none;
+    }
+    .logo-text{
+        font-size: 10px;    
+    }
+
+    .content{
+        margin-left: 0px;
+
+    }
+    .content h1 {
+        font-size: 40px;
+        max-width: 300px;
+        line-height: 1;
+        letter-spacing: -2px;
+        margin: 10px auto;
+    }
+    .content p {
+        max-width: 300px;
+        font-size: 13px;
+        margin: 20px auto 0;
+        align-items: center;
+        line-height: 1.2;
+    }
+
+    .content button {
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        font-size: 10px;
+        margin: 20px auto;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+@media print{
+    .content{
+        background-color: #475569;
+    }
+}
